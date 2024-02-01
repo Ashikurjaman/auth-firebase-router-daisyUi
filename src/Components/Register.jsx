@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import { UserContext } from '../Context/AuthContext';
 
 const Register = () => {
+    
     const {createUser} = useContext(UserContext);
-    console.log(createUser);
+    
     const handelLogin = (event) => {
         event.preventDefault();
         const form = event.target;

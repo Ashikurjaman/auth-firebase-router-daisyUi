@@ -13,6 +13,7 @@ const Login = () => {
     .then((result) => {
         // Signed in 
         const user = result.user;
+        form.reset();
         // ...
       })
       .catch((error) => {
